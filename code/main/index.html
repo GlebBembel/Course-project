@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VETRA — Гостиничный комплекс</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo-link">
+          <img src="png_or_jpg/Лого.png" alt="VETRA" class="logo-img">
+        </a>
+        
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="vakansii.html">ВАКАНСИИ</a></li>
+            <li><a href="nomera.html">НОМЕРА</a></li>
+            <li><a href="uslugi.html">УСЛУГИ</a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-btn">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-suptitle">ГОСТИНИЧНЫЙ КОМПЛЕКС ГОРОДА</h1>
+      <h2 class="hero-title">VETRA</h2>
+      <p class="hero-description">VETRA — архитектура покоя в центре Минска</p>
+    </div>
+  </section>
+
+
+<section class="rooms-section">
+    <div class="container">
+      <h2 class="section-title">НАШИ НОМЕРА</h2>
+      
+      <div class="rooms-slider">
+        <div class="slide active">
+          <img src="png_or_jpg/standart.jpg" alt="Номер Стандарт">
+          <div class="slide-content">
+            <h3>СТАНДАРТ</h3>
+            <p>от 150 BYN/Ночь</p>
+            <a href="nomera.html"><button class="details-btn">Подробнее</button></a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="png_or_jpg/lyks.jpg" alt="Номер Люкс">
+          <div class="slide-content">
+            <h3>ЛЮКС</h3>
+            <p>от 240 BYN/Ночь</p>
+            <a href="nomera.html"><button class="details-btn">Подробнее</button></a>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <img src="png_or_jpg/appartaments.jpg" alt="Апартаменты">
+          <div class="slide-content">
+            <h3>АПАРТАМЕНТЫ</h3>
+            <p>от 360 BYN/Ночь</p>
+            <a href="nomera.html"><button class="details-btn">Подробнее</button></a>
+          </div>
+        </div>
+        
+        <button class="slider-prev">❮</button>
+        <button class="slider-next">❯</button>
+        
+  
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wellness-section">
+    <div class="container">
+      <h2 class="section-title">ФИТНЕС И РЕЛАКСАЦИЯ</h2>
+      
+      <div class="wellness-grid">
+
+        <div class="wellness-card pool-card">
+          <div class="wellness-image">
+            <img src="png_or_jpg/pool.avif" alt="Бассейн отеля VETRA">
+          </div>
+          <div class="wellness-content">
+            <h3>БАССЕЙН</h3>
+            <div class="wellness-features">
+              <span>4 дорожки по 25м</span>
+              <span>Зона джакузи</span>
+              <span>Паровые комнаты</span>
+            </div>
+            <p>Бассейн отеля VETRA — это стильное пространство для отдыха и восстановления. Классический интерьер и естественное освещение создают атмосферу уюта и спокойствия.</p>
+          </div>
+        </div>
+
+        <div class="wellness-card fitness-card">
+          <div class="wellness-image">
+            <img src="png_or_jpg/trenya.jpg" alt="Фитнес-зал VETRA">
+          </div>
+          <div class="wellness-content">
+            <h3>ФИТНЕС-ЗАЛ</h3>
+            <div class="wellness-features">
+              <span>Кардио-зона</span>
+              <span>Силовые тренажёры</span>
+              <span>Панорамные окна</span>
+            </div>
+            <p>Просторный тренажёрный зал с современными тренажёрами от ведущих брендов. Вид на город создаёт идеальный фон для тренировок.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant-section">
+    <div class="container">
+      <h2 class="section-title">РЕСТОРАН</h2>
+      
+      <div class="main-photo" onclick="changeMainPhoto(this)">
+        <img src="png_or_jpg/rest_2.jpg" alt="Ресторан VETRA" id="current-main">
+      </div>
+      
+      <div class="gallery-thumbs">
+        <div class="thumb" onclick="setAsMain('png_or_jpg/rest_1.jpg')">
+          <img src="png_or_jpg/rest_1.jpg" alt="Интерьер 1">
+        </div>
+        <div class="thumb" onclick="setAsMain('png_or_jpg/rest_3.jpg')">
+          <img src="png_or_jpg/rest_3.jpg" alt="Интерьер 2">
+        </div>
+        <div class="thumb" onclick="setAsMain('png_or_jpg/rest_4.jpg')">
+          <img src="png_or_jpg/rest_4.jpg" alt="Интерьер 3">
+        </div>
+        <div class="thumb" onclick="setAsMain('png_or_jpg/rest_5.jpg')">
+          <img src="png_or_jpg/rest_5.jpg" alt="Интерьер 4">
+        </div>
+      </div>
+      
+      <div class="restaurant-description">
+        <p>Ресторан VETRA сочетает авторскую кухню с эстетикой минимализма. Шеф-повар создаёт блюда из сезонных продуктов, подчёркивая их натуральный вкус.</p>
+        <a href="restaurant.html"><button class="details-btn">Подробнее</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <div class="container">
+      <h2 class="section-title">ОТЗЫВЫ ГОСТЕЙ</h2>
+      
+      <div class="reviews-slider">
+        <div class="review active">
+          <div class="review-content">
+            <div class="review-text">
+              "Отель превзошел все ожидания! Интерьеры в стиле минимализм создают атмосферу спокойствия. Идеальное сочетание дизайна и комфорта.  Особенно понравился бассейн с панорамным видом."
+            </div>
+            <div class="review-author">
+              <div class="author-info">
+                <h4>Анна К.</h4>
+                <p>Гость отеля, март 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review">
+          <div class="review-content">
+            <div class="review-text">
+              "Идеальное сочетание дизайна и комфорта. Персонал внимательный, номера продуманы до мелочей. Ресторан предлагает изысканное меню с местными продуктами."
+            </div>
+            <div class="review-author">
+              <div class="author-info">
+                <h4>Михаил С.</h4>
+                <p>Гость отеля, февраль 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review">
+          <div class="review-content">
+            <div class="review-text">
+              "VETRA - это отель, куда хочется возвращаться. Особенно впечатлил attention to detail - от аромата в лобби до постельного белья. СПА-зона стала моим спасением после рабочих встреч."
+            </div>
+            <div class="review-author">
+              <div class="author-info">
+                <h4>Елена П.</h4>
+                <p>Бизнес-гость, январь 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review">
+          <div class="review-content">
+            <div class="review-text">
+              "Выбрали VETRA для медового месяца и ни секунды не пожалели! Номер с панорамными окнами, завтраки с шампанским и особенно - терраса на крыше на закате. Персонал учёл все наши пожелания."
+            </div>
+            <div class="review-author">
+              <div class="author-info">
+                <h4>Дмитрий и Анастасия</h4>
+                <p>Молодожёны, декабрь 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review">
+          <div class="review-content">
+            <div class="review-text">
+              "Как частый гость отелей категории luxury, могу сказать - VETRA достойный конкурент европейским бутик-отелям. Соотношение цены и качества на уровне, а фишка с минималистичным дизайном действительно работает."
+            </div>
+            <div class="review-author">
+              <div class="author-info">
+                <h4>Артём В.</h4>
+                <p>Путешественник, 15+ стран</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="slider-prev">❮</button>
+        <button class="slider-next">❯</button>
+        
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="png_or_jpg/Лого.png" alt="VETRA" class="footer-logo-img">
+        </div>
+        
+        <div class="footer-info">
+          <p class="copyright">© 2025 Гостиничный комплекс VETRA, г. Минск</p>
+          <p class="address">Янковского 53, к.8, этаж 23</p>
+          <p class="phone">Контактный номер: <a href="tel:+374298432312">+374 29 843 23 12</a></p>
+        </div>
+        
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script_main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const navList = document.querySelector('.nav-list');
+      
+      if (menuBtn && navList) { 
+        menuBtn.addEventListener('click', function() {
+          this.classList.toggle('active');
+          navList.classList.toggle('active');
+          
+          document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        document.querySelectorAll('.nav-list a').forEach(link => {
+          link.addEventListener('click', function() {
+            menuBtn.classList.remove('active');
+            navList.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

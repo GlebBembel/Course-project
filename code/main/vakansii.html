@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VETRA — Вакансии</title>
+  <link rel="stylesheet" href="css/styles_vacansii.css"> 
+</head>
+<body>   
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo-link">
+          <img src="png_or_jpg/Лого.png" alt="VETRA" class="logo-img">
+        </a>
+        
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="vakansii.html">ВАКАНСИИ</a></li>
+            <li><a href="nomera.html">НОМЕРА</a></li>
+            <li><a href="uslugi.html">УСЛУГИ</a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-btn">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="vacancies-page">
+    <div class="container">
+      <h1 class="page-title">Вакансии</h1>
+      
+      <div class="vacancies-list">
+        <article class="vacancy-card">
+          <div class="vacancy-header">
+            <h2 class="vacancy-title">Администратор</h2>
+            <span class="vacancy-badge">Новая</span>
+          </div>
+          <div class="vacancy-content">
+            <p class="vacancy-description">
+              Гостиничный комплекс VETRA ищет администратора. В ваши задачи войдут: 
+              прием гостей, работа с бронированиями, консультации и решение вопросов. 
+              Мы ждем вас!
+            </p>
+            <ul class="vacancy-details">
+              <li><strong>График:</strong> 5/2, сменный</li>
+              <li><strong>Требования:</strong> Опыт работы от 1 года, знание английского</li>
+              <li><strong>Зарплата:</strong> От 2500 BYN</li>
+            </ul>
+          </div>
+          <button class="vacancy-btn">Откликнуться</button>
+        </article>
+
+        <article class="vacancy-card">
+          <div class="vacancy-header">
+            <h2 class="vacancy-title">Повар</h2>
+            <span class="vacancy-badge">Горячая</span>
+          </div>
+          <div class="vacancy-content">
+            <p class="vacancy-description">
+              Гостиничный комплекс VETRA приглашает повара для работы на нашей кухне. 
+              Обязанности: приготовление блюд по меню, контроль качества продуктов, 
+              соблюдение санитарных норм.
+            </p>
+            <ul class="vacancy-details">
+              <li><strong>График:</strong> 2/2</li>
+              <li><strong>Требования:</strong> Опыт работы от 3 лет, санитарная книжка</li>
+              <li><strong>Зарплата:</strong> От 3000 BYN</li>
+            </ul>
+          </div>
+          <button class="vacancy-btn">Откликнуться</button>
+        </article>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="png_or_jpg/Лого.png" alt="VETRA" class="footer-logo-img">
+        </div>
+        
+        <div class="footer-info">
+          <p class="copyright">© 2025 Гостиничный комплекс VETRA, г. Минск</p>
+          <p class="address">Янковского 53, к.8, этаж 23</p>
+          <p class="phone">Контактный номер: <a href="tel:+374298432312">+374 29 843 23 12</a></p>
+        </div>
+        
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/js_vacansii.js"></script>
+
+<div class="modal-overlay" id="vacancyModal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Отклик на вакансию</h3>
+    <form id="vacancyForm">
+      <input type="hidden" id="selectedVacancy">
+      <div class="form-group">
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" required placeholder="Иванов Иван Иванович">
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" required placeholder="+7 (999) 123-45-67">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="example@mail.com">
+      </div>
+      <div class="form-group">
+        <label for="resume">Резюме (ссылка или текст):</label>
+        <textarea id="resume" rows="3" placeholder="Опишите ваш опыт или прикрепите ссылку на резюме"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Отправить отклик</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
